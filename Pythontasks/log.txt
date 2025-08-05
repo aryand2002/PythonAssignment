@@ -1,0 +1,6 @@
+INFO: Server started at 10:00AM
+ERROR: Connection refused
+INFO: User logged in
+WARNING: High CPU usage
+ERROR: Database timeout
+INFO: Request completed
