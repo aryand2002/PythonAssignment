@@ -38,23 +38,23 @@ class ToDoApp:
     def add_task(self, name, description):
         self.tasks.append(Task(name, description))
         self.save_tasks()
-        print("✅ Task added.")
+        print("Task added.")
 
     def mark_complete(self, index):
         if 0 <= index < len(self.tasks):
             self.tasks[index].completed = True
             self.save_tasks()
-            print("✅ Task marked as completed.")
+            print("Task marked as completed.")
         else:
-            print("❌ Invalid task index.")
+            print("Invalid task index.")
 
     def display_tasks(self):
         if not self.tasks:
-            print("📭 No tasks found.")
+            print("No tasks found.")
             return
 
         for i, task in enumerate(self.tasks):
-            status = "✅ Done" if task.completed else "🕒 Pending"
+            status = "Done" if task.completed else "Pending"
             print(f"{i}. {task.name} - {task.description} [{status}]")
 
 
@@ -84,13 +84,11 @@ def main():
             app.display_tasks()
 
         elif choice == "4":
-            print("👋 Exiting. Bye!")
+            print("Exiting. Bye!")
             break
 
         else:
-            print("❌ Invalid choice. Try again.")
+            print("Invalid choice. Try again.")
 
-
-# ✅ Add this at the bottom
 if __name__ == "__main__":
     main()

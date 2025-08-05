@@ -1,3 +1,6 @@
+# Task: Fetch and Display Weather Information for a City
+# Uses the wttr.in API to get current weather details in JSON format
+
 import requests
 
 def fetch_weather(city):

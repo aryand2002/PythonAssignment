@@ -1,3 +1,6 @@
+# Task: Process Log File
+# Reads a log file and counts the number of lines containing the word "ERROR"
+
 def process_log_file(filename):
     error_count = 0
 
@@ -10,8 +13,8 @@ def process_log_file(filename):
         print(f"Total 'ERROR' lines: {error_count}")
 
     except FileNotFoundError:
-        print(" File not found.")
+        print("File not found.")
     except Exception as e:
-        print(f" Something went wrong: {e}")
+        print(f"Something went wrong: {e}")
 
 process_log_file("log.txt")

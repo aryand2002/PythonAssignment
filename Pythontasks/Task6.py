@@ -1,7 +1,10 @@
-def find_missing(arr,n):
-    total_sum = n * (n+1)//2
-    newsum = sum(arr) 
-    return total_sum - newsum
+# Task: Find the Missing Number
+# Given an array of size n-1 with numbers from 1 to n, find the missing number
 
-print("The missing number is : ",find_missing([1,2,4,5],5))
-print("The missing number is : ",find_missing([2,3,4,7,1,6,8,9,10],10))
+def find_missing(arr, n):
+    expected_sum = n * (n + 1) // 2
+    actual_sum = sum(arr)
+    return expected_sum - actual_sum
+
+print("The missing number is:", find_missing([1, 2, 4, 5], 5))         # Output: 3
+print("The missing number is:", find_missing([2, 3, 4, 7, 1, 6, 8, 9, 10], 10))  # Output: 5
